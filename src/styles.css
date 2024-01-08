@@ -1,0 +1,119 @@
+* {
+  font-family: Helvetica, Arial, sans-serif;
+  background-color: transparent;
+}
+
+body {
+  padding: 5vw; /* Se ajusta según el ancho de la pantalla */
+  font-size: 16px; /* Tamaño base del texto */
+  
+}
+
+input {
+  background-color: white;
+  border-radius: 5px;
+  border: 1px solid rgb(97, 32, 158);
+  color: black;
+  font-size: 1.2rem;
+  outline: none;
+  padding: 1em;
+  width: 90%; /* Cambiado a un 90% del ancho del contenedor */
+  max-width: 100%; /* Tamaño máximo para evitar que sea demasiado ancho */
+  margin: 0 auto; /* Centra el input */
+}
+
+h2 {
+  font-size: 1.5rem;
+}
+
+h3 {
+  font-size: 2.5rem;
+  margin-bottom: 5px;
+}
+.card-grid {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.card {
+  align-items: center;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.03);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-bottom: 2em;
+  margin-right: 2em;
+  overflow: hidden;
+  width: calc(33.333% - 2em); /* Ancho de las tarjetas */
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card p {
+  color: black;
+  font-size: 1.2rem;
+  margin-top: 5px;
+  padding: 0.5em 1em;
+  text-align: center;
+  font-weight: bold;
+}
+
+.card img {
+  width: 100%;
+}
+.card:hover {
+  transform: scale(1.05); /* Aumenta la escala al pasar el cursor */
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2); /* Cambia la sombra */
+}
+
+.custom-button {
+  background-color: rgb(97, 32, 158);
+  border: none;
+  color: white;
+  padding: 1em 2em;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1rem;
+  margin: 0.5em;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.custom-button:hover {
+  background-color: #9c35a5;
+}
+
+
+.button-container {
+  display: flex; /* Utiliza flexbox */
+  flex-wrap: wrap; /* Permitirá que los botones se ajusten en múltiples líneas si es necesario */
+  justify-content: center; /* Centra los elementos horizontalmente */
+  align-items: center; /* Centra los elementos verticalmente */
+  margin-bottom: 2em;
+  margin-top: 2em;
+}
+.copyrigth {
+  display: flex; /* Utiliza flexbox */
+  flex-wrap: wrap; /* Permitirá que los botones se ajusten en múltiples líneas si es necesario */
+  justify-content: center; /* Centra los elementos horizontalmente */
+  align-items: center; /* Centra los elementos verticalmente */
+  margin-top: 2em; /* Ajusta el margen superior */
+  padding-bottom: 2em; /* Espaciado inferior */
+  margin: 0 auto; /* Centra horizontalmente */
+  max-width: 80%; /* Limita el ancho para centrarlo en pantallas más grandes */
+  
+}
+
+@media screen and (max-width: 768px) {
+  /* Estilos responsivos para pantallas más pequeñas */
+  .copyrigth {
+    font-size: 0.8em;
+    
+    /* Tamaño de fuente más pequeño */
+  }
+}
